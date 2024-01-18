@@ -12,7 +12,7 @@ const ProductDetail = () => {
   const {id} = useParams();
  
   const getProductDetail = async() => {
-    let url = `http://localhost:3004/products/${id}`;
+    let url = `http:///my-json-server.typicode.com/OnlyREHA/shopping/products/${id}`;
     let response = await fetch(url);
     let data = await response.json()
     setProduct(data)
