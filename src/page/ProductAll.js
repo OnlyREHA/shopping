@@ -34,8 +34,8 @@ const ProductAll = () => {
         <Row>
           {
             productList.map((menu) =>(
-              <Col lg = {3} >
-                <ProductCard key={menu.id} item = {menu}/>
+              <Col lg = {3} key={menu.id}>
+                <ProductCard item = {menu}/>
               </Col>
               )
             )
