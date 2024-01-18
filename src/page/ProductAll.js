@@ -17,6 +17,7 @@ const ProductAll = () => {
     console.log(searchQuery)
     //let url = `http://localhost:3004/products?q=${searchQuery}`;
     let url = ` https://my-json-server.typicode.com/OnlyREHA/shopping/products?q=${searchQuery}`;
+
     let response = await fetch(url);
     let data = await response.json();
    
